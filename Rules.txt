@@ -1,0 +1,2 @@
+For running this program, make sure the diu.ico and the application file is in the same folder. 
+Other wise, it won’t run the program 
