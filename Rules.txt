@@ -1,2 +1,1 @@
-For running this program, make sure the diu.ico and the application file is in the same folder. 
-Other wise, it won’t run the program 
+***For running this program, make sure the diu.ico(icon image) and the python file is in the same folder , Otherwise, it won’t run the program***
