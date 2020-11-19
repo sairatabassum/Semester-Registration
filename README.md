@@ -29,7 +29,7 @@ Python
 
 Use:
 
-Python file handling 
+Python file handling
 Tkinter Package
 
 
