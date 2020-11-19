@@ -23,15 +23,10 @@ Features:
 6.	Show Details
 7.	Clear
 
-Language:
+Language: Python 
 
-Python 
-
-Use:
-
-Python file handling
-
-Tkinter Package
+Use: Python file handling
+     Tkinter Package
 
 
 
