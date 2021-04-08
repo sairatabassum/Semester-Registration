@@ -90,7 +90,9 @@ def show_f():
         messagebox.showerror("Error!", "Search bar is empty!!")
 
     elif c=="False":
-        messagebox.showwarning("Error!", "Not Found!!")
+
+        w.delete("1.0", "end")
+        w.insert(END, 26*blank+"Record is not found!!")
 
     else:
         clear()
@@ -119,9 +121,12 @@ def show_f():
 def delete_f():
 
     file = ID_entry.get() + '.txt'
+
+    if s1.get()!="":
+        file=s1.get()+'.txt'
+
     c = str(path.exists(file))
 
-    print(c)
 
     if c=="True":
         os.remove(file)
@@ -165,7 +170,7 @@ root=Tk()
 blank=" "
 root.title(200*blank+"Semester Registration")
 root.iconbitmap(r'diu.ico')
-root.geometry("1350x650")
+root.geometry("1350x650+5+0")
 root.configure(bg="#A9A9A9")
 
 
