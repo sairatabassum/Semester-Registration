@@ -77,7 +77,7 @@ def search_f():
 
     else:
         w.delete("1.0", "end")
-        messagebox.showerror("Error!", "Not Found!!")
+        w.insert(END, 26*blank+"Record is not found!!")
 
 
 def show_f():
