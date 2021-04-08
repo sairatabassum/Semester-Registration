@@ -15,10 +15,12 @@ def add_f():
     file=ID_entry.get()+'.txt'
     c=str(path.exists(file))
     #print(c)
-    if(c=="True"):
-        messagebox.showwarning("Error!", "ID EXIST")
-    elif(ID_entry.get()==""or Name_entry.get()==""or Section_entry.get()=="" or Status_Combo.get()=="" or len(Course_txt.get("1.0", "end-1c")) == 0 ):
+
+    if(ID_entry.get()==""or Name_entry.get()==""or Section_entry.get()=="" or Status_Combo.get()=="" or len(Course_txt.get("1.0", "end-1c")) == 0 ):
         messagebox.showwarning("Error!", "All entries are required!!")
+
+    elif (c == "True"):
+        messagebox.showwarning("Error!","ID EXIST")
 
     else:
         file1 = open(file, 'a')
