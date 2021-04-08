@@ -10,8 +10,9 @@ def main():
    main()
 
 
-
+#---Add new registration data---
 def add_f():
+
     file=ID_entry.get()+'.txt'
     c=str(path.exists(file))
     #print(c)
