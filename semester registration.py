@@ -66,14 +66,14 @@ def search_f():
     #print(c)
 
 
-    if (c == "True"):
+    if s1.get()=="":
+        messagebox.showerror("Error!", "Search bar is empty!!")
+
+
+    elif (c == "True"):
         w.delete("1.0", "end")
         w.insert(END, 30*blank+"Record is found!!")
 
-
-
-    elif s1.get()=="":
-        messagebox.showerror("Error!", "Search bar is empty!!")
 
     else:
         w.delete("1.0", "end")
@@ -86,11 +86,11 @@ def show_f():
     c = str(path.exists(file))
 
 
-    if c=="False":
-        messagebox.showwarning("Error!", "Not Found!!")
-
-    elif s1.get()=="":
+    if s1.get()=="":
         messagebox.showerror("Error!", "Search bar is empty!!")
+
+    elif c=="False":
+        messagebox.showwarning("Error!", "Not Found!!")
 
     else:
         clear()
@@ -117,13 +117,13 @@ def show_f():
 
 
 def delete_f():
-    po = s1.get()
-    file = s1.get() + '.txt'
+
+    file = ID_entry.get() + '.txt'
     c = str(path.exists(file))
 
-    if po == "":
-        messagebox.showerror("Error!", "Search bar is empty!!")
-    elif c=="True":
+    print(c)
+
+    if c=="True":
         os.remove(file)
         messagebox.showinfo("Delete", "Deleted Successfully!!")
     elif c=="False":
