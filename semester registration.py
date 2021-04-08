@@ -36,7 +36,7 @@ def add_f():
 
 
 
-
+#---Clear the Entry Bar--
 def clear():
     ID_entry.delete(0, END)
     ID_entry.insert(0, "")
