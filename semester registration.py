@@ -10,6 +10,7 @@ def main():
    main()
 
 
+
 #----Add new registration data----
 def add_f():
 
@@ -36,6 +37,7 @@ def add_f():
         messagebox.showinfo("Success", "Add Successfully!!")
 
         file1.close()
+
 
 
 
@@ -77,6 +79,8 @@ def search_f():
     else:
         w.delete("1.0", "end")
         w.insert(END, 26*blank+"Record is not found!!")
+
+
 
 
 #----Show Student details----
@@ -123,6 +127,8 @@ def show_f():
 
 
 
+
+
 #----Delete Student Record----
 def delete_f():
 
@@ -147,6 +153,8 @@ def delete_f():
 
     elif c=="False":
         messagebox.showerror("Error!", "Record is not exist!!")
+
+
 
 
 #----Update Student Data----
@@ -175,6 +183,8 @@ def update_f():
         messagebox.showinfo("Update", "Updated Successfully!!")
 
 
+
+
 #----Search Clear----
 def clear1_f():
     w.delete("1.0", "end")
@@ -182,6 +192,7 @@ def clear1_f():
 
     s1.delete(0, END)
     s1.insert(0, "")
+
 
 
 #---Windows---
