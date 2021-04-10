@@ -83,6 +83,7 @@ def search_f():
 
 
 
+
 #----Show Student details----
 def show_f():
 
@@ -129,6 +130,7 @@ def show_f():
 
 
 
+
 #----Delete Student Record----
 def delete_f():
 
@@ -153,6 +155,7 @@ def delete_f():
 
     elif c=="False":
         messagebox.showerror("Error!", "Record is not exist!!")
+
 
 
 
@@ -185,6 +188,7 @@ def update_f():
 
 
 
+
 #----Search Clear----
 def clear1_f():
     w.delete("1.0", "end")
@@ -192,6 +196,7 @@ def clear1_f():
 
     s1.delete(0, END)
     s1.insert(0, "")
+
 
 
 
