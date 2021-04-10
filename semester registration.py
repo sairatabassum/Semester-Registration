@@ -102,9 +102,14 @@ def show_f():
         i = 0
         yo = ""
         for x in f1:
+
+            #Remove last '\n' character
+            x=x[:-1]
             i += 1
             if i == 1:
+
                 ID_entry.insert(0,x)
+
             elif i == 2:
                 Name_entry.insert(0,x)
             elif i == 3:
