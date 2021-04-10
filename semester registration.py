@@ -117,7 +117,7 @@ def show_f():
             elif i == 4:
                 Status_Combo.set(x)
             else:
-                yo += x
+                yo += (x+'\n')
         Course_txt.insert(END, yo)
 
 
@@ -158,11 +158,10 @@ def update_f():
             print("The record does not exist")
 
         file1 = open(s1.get()+".txt", "a")
-        file1.write(ID_entry.get())
-        file1.write(Name_entry.get())
-        file1.write(Section_entry.get())
-        file1.write(Status_Combo.get())
-        #file1.write("\n")
+        file1.write(ID_entry.get()+'\n')
+        file1.write(Name_entry.get()+'\n')
+        file1.write(Section_entry.get()+'\n')
+        file1.write(Status_Combo.get()+'\n')
         file1.write(Course_txt.get("1.0", "end"))
         file1.close()
 
