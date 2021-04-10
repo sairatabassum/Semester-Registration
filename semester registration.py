@@ -10,7 +10,7 @@ def main():
    main()
 
 
-#---Add new registration data---
+#----Add new registration data----
 def add_f():
 
     file=ID_entry.get()+'.txt'
@@ -39,7 +39,7 @@ def add_f():
 
 
 
-#---Clear the Entry Bar--
+#----Clear the Entry Bar----
 def clear():
     ID_entry.delete(0, END)
     ID_entry.insert(0, "")
@@ -59,7 +59,7 @@ def clear():
 
 
 
-
+#----Search Student Record----
 def search_f():
     file = s1.get() + '.txt'
     c = str(path.exists(file))
@@ -80,6 +80,7 @@ def search_f():
         w.insert(END, 26*blank+"Record is not found!!")
 
 
+#----Show Student details----
 def show_f():
 
     file = s1.get() + '.txt'
@@ -122,7 +123,7 @@ def show_f():
 
 
 
-
+#----Delete Student Record----
 def delete_f():
 
     file = ID_entry.get() + '.txt'
@@ -146,6 +147,7 @@ def delete_f():
         messagebox.showerror("Error!", "Record is not exist!!")
 
 
+#----Update Student Data----
 def update_f():
 
 
@@ -166,6 +168,7 @@ def update_f():
         file1.close()
 
         messagebox.showinfo("Update", "Updated Successfully!!")
+
 
 def clear1_f():
     w.delete("1.0", "end")
