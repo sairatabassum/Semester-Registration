@@ -295,7 +295,7 @@ details=Button(Search_Frame,text="Show Details",width=10,height=0,bg="#A9A9A9",a
 details.grid(row=0,column=3,sticky="w",pady=10,padx=4)
 
 
-#---record_found---
+#---Record_found---
 w_Frame=Frame(Search_Frame,bg="#b62d2d")
 w_Frame.place(x=20,y=50,width=650,height=540)
 w=Text(w_Frame,width=105,height=5,font=("Times new roman",20,"bold"),fg="blue")
