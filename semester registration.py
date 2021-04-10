@@ -130,7 +130,7 @@ def delete_f():
 
     if Id=="":
 
-        messagebox.showwarning("Error!", "All entries are required!!")
+        messagebox.showwarning("Error!", "Student ID required!!")
 
     elif c=="True":
 
