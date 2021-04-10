@@ -121,16 +121,22 @@ def show_f():
 def delete_f():
 
     file = ID_entry.get() + '.txt'
-
+    Id=ID_entry.get()
     if s1.get()!="":
         file=s1.get()+'.txt'
+        Id=s1.get()
 
     c = str(path.exists(file))
 
+    if Id=="":
 
-    if c=="True":
+        messagebox.showwarning("Error!", "All entries are required!!")
+
+    elif c=="True":
+
         os.remove(file)
-        messagebox.showinfo("Delete", "Deleted Successfully!!")
+        messagebox.showinfo("Delete", "Deleted Successfully ID= "+Id+"!!")
+
     elif c=="False":
         messagebox.showerror("Error!", "Record is not exist!!")
 
