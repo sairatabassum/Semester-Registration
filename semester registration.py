@@ -15,7 +15,7 @@ def add_f():
 
     file=ID_entry.get()+'.txt'
     c=str(path.exists(file))
-    #print(c)
+
 
     if(ID_entry.get()==""or Name_entry.get()==""or Section_entry.get()=="" or Status_Combo.get()=="" or len(Course_txt.get("1.0", "end-1c")) == 0 ):
         messagebox.showwarning("Error!", "All entries are required!!")
@@ -63,7 +63,6 @@ def clear():
 def search_f():
     file = s1.get() + '.txt'
     c = str(path.exists(file))
-    #print(c)
 
 
     if s1.get()=="":
@@ -96,6 +95,7 @@ def show_f():
         w.insert(END, 26*blank+"Record is not found!!")
 
     else:
+
         clear()
         f = open(s1.get()+".txt")
 
@@ -128,6 +128,8 @@ def delete_f():
 
     file = ID_entry.get() + '.txt'
     Id=ID_entry.get()
+
+    #---Search ID Entry
     if s1.get()!="":
         file=s1.get()+'.txt'
         Id=s1.get()
@@ -153,9 +155,12 @@ def update_f():
 
     if (ID_entry.get() == "" or Name_entry.get() == "" or Section_entry.get() == "" or Status_Combo.get() == "" or len(Course_txt.get("1.0", "end-1c")) == 0):
         messagebox.showwarning("Error!", "All entries are required!!")
+
     else:
+
         if os.path.exists(s1.get()+'.txt'):
             os.remove(s1.get()+'.txt')
+
         else:
             print("The record does not exist")
 
@@ -170,6 +175,7 @@ def update_f():
         messagebox.showinfo("Update", "Updated Successfully!!")
 
 
+#----Search Clear----
 def clear1_f():
     w.delete("1.0", "end")
     w.insert(END, "")
