@@ -14,7 +14,7 @@ First Python GUI Application With Tkinter
 - Write Course
 - Enter ID No
 
-  ***Button***
+ ***Button***
 
 - Add
 - Delete
