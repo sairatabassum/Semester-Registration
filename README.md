@@ -3,30 +3,30 @@ First Python GUI Application With Tkinter
 ![Capture](https://user-images.githubusercontent.com/52861859/114088039-67fd2a00-98d6-11eb-9304-3d3293fb33d8.PNG)
 
 
-Features:
+### Features:
 
    ***Entry***
 
-1.	ID No
-2.	Name
-3.	Section
-4.	Registration Course
-5.	Write Course
-6.	Enter ID No
+- ID No
+- Name
+- Section
+- Registration Course
+- Write Course
+- Enter ID No
 
   ***Button***
 
-1.	Add
-2.	Delete
-3.	Update
-4.	Clear
-5.	Search
-6.	Show Details
-7.	Clear
+- Add
+- Delete
+- Update
+- Clear
+- Search
+- Show Details
+- Clear
 
-Language: Python 
+**Language:** Python 
 
-Use: Python file handling, Tkinter Package
+**Use:** Python file handling, Tkinter Package
 
 
 
